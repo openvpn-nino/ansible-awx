@@ -1,0 +1,8 @@
+---
+- hosts: windows
+  tasks:
+    - name: Copy File
+      win_copy:
+        src: 'C:\Users\Administrator\AppData\Roaming\OpenVPN Connect\log'
+        dest: C:\Ansible-Folder-Output\
+        remote_src: yes
